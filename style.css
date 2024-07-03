@@ -69,7 +69,6 @@ nav{
     padding-left: unset;
 }
 .video{
-    border: 1px solid yellow;
     margin: 10px;
     
 }
@@ -109,9 +108,20 @@ nav{
     margin-top: 3px;
 }
 
+.title-video{
+    margin-top: 1.2rem;
+}
+.details-video{
+    display: grid;
+    grid-template-columns: 14% 1fr;
+}
 
-
-
+.chanel-profile-img #img{
+    width: 35px;
+    height: 2.2rem;
+    border-radius: 21px;
+    margin-top: 19px;
+}
 
 
 
