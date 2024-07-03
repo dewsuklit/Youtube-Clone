@@ -3,9 +3,12 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 nav{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 30% 1fr 27%;
 }
 .logo{
     margin-left: 20px;
@@ -45,9 +48,11 @@ nav{
 .search button{
     border-radius: 20px;
     border: 1px solid lightgray;
+    background-color: #f2f2f2;
 }
 .search button:hover{
-    background-color: #d3d3d3;
+    background-color: #e5e5e5;
+    border: 1px solid lightgray;
 }
 
 .main{
@@ -62,7 +67,6 @@ nav{
 .sidebar{
     display: grid;
     grid-template-columns: 25% 1fr;
-    border: 1px solid red;
     height: 100%;
 }
 .sidebar ul {
@@ -78,9 +82,22 @@ nav{
     border-radius: 20px;
     
 }
+.title-video{
+    font-family: "Roboto", sans-serif;
+}
+.video-name{
+    
+    font-weight: 900;
+}
+.chanel-name{
+    color: #777676;
+    font-weight: 500;
+    
+}
 
-
-
+.view_num{
+    font-size: 14px;
+}
 .sidebar ul li{
     list-style: none;
     padding: 10px;
@@ -123,13 +140,37 @@ nav{
     margin-top: 19px;
 }
 
+.top-menu-bar ul{
+    display: flex;
+    padding-left: unset;
+}
+.top-menu-bar{
+    height: 3rem;
+    
+}   
+.top-menu-bar ul li{
+    list-style: none;
+    
+    padding-left: 1rem;
+}
+
+.bgtop-menu-bar{
+    background-color: #f2f2f2;
+    width: 100%;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 10px;
+}
+.bgtop-menu-bar:hover{
+    background-color: #e5e5e5;
+}
 
 
-
-
-
-
-@media screen and (max-width: 1278px){
+/* @media screen and (max-width: 1278px){
     .main{
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -137,4 +178,4 @@ nav{
     .sidebar{
         display: none;
     }
-}
+} */
