@@ -3,16 +3,23 @@
     margin: 0;
     box-sizing: border-box;
 }
-nav{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+.nav-bar{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 16px;
+    height: 56px;
+    position: sticky;
+    top: 0;
+    background-color: #fff;
 }
 .logo{
-    margin-left: 20px;
+    display: flex;
 }
-.logo img{
-    width: 112px;
-    height: 74px;
+.logo-img{
+    padding: 18px;
 }
 
 .logo button{
@@ -22,37 +29,114 @@ nav{
     border: none;
     font-size: 25px;
     padding-right: 40px;
-    margin-top: 10px;
+    
 }
+.toggle-sidebar{
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+}
+#icon{
+    margin-right: 8px;
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 100px;
+    background-color: #fff;
+}
+
 .profile{
-    text-align: end;
-    vertical-align: middle;
-    margin-top: 1rem;
+    width: 40px;
+    height: 40px;
+    border: none;
+    background-color: #fff;
+    padding-top: 5px;
 }
 .profile svg{
     margin-right: 20px;
     font-size: 20px;
 }
 
-.search{
-    text-align: center;
-    margin-top: 1rem;
+.flex-center{
+    display: flex;
+    align-items: center;
+    flex: 0 1 732px;
 }
-.search input{
-    width: 100%;
+.flex-center input{
+    min-width: 0;
     border-radius: 20px;
+    
 }
-.search button{
+.flex-center .input-group{
+    padding-left: 5rem;
+}
+.flex-center .input-group button{
     border-radius: 20px;
     border: 1px solid lightgray;
+    background-color: #f8f8f8;
+    width: 70px;
 }
-.search button:hover{
-    background-color: #d3d3d3;
+.flex-center button:hover{
+    background-color: #e5e5e5;
+    border: 1px solid lightgray;
+}
+.flex-center #search-input{
+    margin-bottom: unset;
+}
+.voice-search-btn{
+    margin-left: 12px;
+}
+.voice-btn{
+    height: 40px;
+    width: 41px;
+    border-radius: 20px;
+    border: none;
+}
+.flex-end{
+    display: flex;
+    min-width: 225px;
+    justify-content: flex-end;
+    align-items: center;
+}
+.top-menu-bar{
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    padding: 0 16px;
+    position: sticky;
+    top: 56px;
+    background-color: #fff;
+}  
+.top-menu-bar ul{
+    display: flex;
+    padding-left: unset;
+    margin-bottom: unset;
+}
+ 
+.top-menu-bar ul li{
+    list-style: none;
+    
+    padding-left: 1rem;
 }
 
+.bgtop-menu-bar{
+    background-color: #f2f2f2;
+    width: 100%;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 10px;
+}
+.bgtop-menu-bar:hover{
+    background-color: #e5e5e5;
+}
 .main{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr ;
+    padding: 0 16px;
 }
 .body{
     display: grid;
@@ -62,14 +146,12 @@ nav{
 .sidebar{
     display: grid;
     grid-template-columns: 25% 1fr;
-    border: 1px solid red;
     height: 100%;
 }
 .sidebar ul {
     padding-left: unset;
 }
 .video{
-    border: 1px solid yellow;
     margin: 10px;
     
 }
@@ -79,9 +161,22 @@ nav{
     border-radius: 20px;
     
 }
+.title-video{
+    font-family: "Roboto", sans-serif;
+}
+.video-name{
+    
+    font-weight: 900;
+}
+.chanel-name{
+    color: #777676;
+    font-weight: 500;
+    
+}
 
-
-
+.view_num{
+    font-size: 14px;
+}
 .sidebar ul li{
     list-style: none;
     padding: 10px;
@@ -109,17 +204,24 @@ nav{
     margin-top: 3px;
 }
 
+.title-video{
+    margin-top: 1.2rem;
+}
+.details-video{
+    display: grid;
+    grid-template-columns: 14% 1fr;
+}
+
+.chanel-profile-img #img{
+    width: 35px;
+    height: 2.2rem;
+    border-radius: 21px;
+    margin-top: 19px;
+}
 
 
 
-
-
-
-
-
-
-
-@media screen and (max-width: 1278px){
+/* @media screen and (max-width: 1278px){
     .main{
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -127,4 +229,4 @@ nav{
     .sidebar{
         display: none;
     }
-}
+} */
